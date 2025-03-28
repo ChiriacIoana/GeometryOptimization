@@ -5,14 +5,14 @@ const Media = () => {
     <div className="media-container">
       <div className="media-item">
         <video controls>
-          <source src="/BeforeStructureEdited.mp4" type="video/mp4" />
+          <source src="./BeforeStructureEdited.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <p>Structura Inițilă</p>
       </div>
       <div className="media-item">
         <video controls>
-          <source src="/OptimizedStructureEdited.mp4" type="video/mp4" />
+          <source src="./OptimizedStructureEdited.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <p>Structura Optimizată Geometric</p>

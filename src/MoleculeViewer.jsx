@@ -19,7 +19,7 @@ const MoleculeViewer = () => {
     if (container) container.appendChild(renderer.domElement);
 
     // Fetch and parse XYZ file
-    fetch('/trial1.xyz')
+    fetch('./trial1.xyz')
       .then((response) => response.text())
       .then((data) => {
         const lines = data.trim().split('\n');
