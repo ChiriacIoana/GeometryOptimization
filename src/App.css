@@ -8,12 +8,42 @@ html, body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: auto auto 1fr auto; /* Add an extra row for bottom content */
   gap: 10px;
   height: 100vh;
+  min-height: 100%; /* Ensure full height */
+  padding-bottom: 0;
 }
 
+.left-side {
+  grid-column: 1;
+  grid-row: 7; /* Place in the bottom row */
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 600px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 20px;
+  align-self: end; /* Align to bottom of grid cell */
+}
+
+.fun {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #68b2ef;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.fun_yap {
+  font-size: 0.9rem;
+  text-align:center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
 .page-title {
   font-size: 2.5em;
   font-weight: bold;
@@ -39,9 +69,9 @@ html, body {
 .yap {
   padding: 10px;
   margin: 5px;
-  background-color: #1e1e1e; /* Darker background for content boxes */
+  background-color: #1e1e1e; 
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -87,30 +117,101 @@ html, body {
 
 .media-item p {
   color: black;
+  font-size: 1.2em;
 }
 
-.space {
+.pic-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #160317, #3d1b48); /* Example gradient */
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin: 10px;
+}
+
+.pic {
+  height: 300px;
+  width: 380px;
+  border-radius: 10px;
+}
+
+.pics-text {
+  color: #d3d3d3;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.space1 {
   grid-column: 1 / 3;
   height: 100px;
   background-color: rgb(32, 22, 33);
+  grid-row: 4;
 }
+.space2 {
+  grid-column: 1 / 3;
+  height: 100px;
+  background-color: rgb(32, 22, 33);
+  grid-row: 6;
+}
+.space3 {
+  grid-column: 1 / 3;
+  height: 100px;
+  background-color: rgb(32, 22, 33);
+  grid-row: 2;
+}
+
 
 .space-text {
   color: #d3d3d3;
   font-size: 0.8 rm;
   text-align: center;
   padding: 6 px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .viewer-container {
-  grid-column: 1 / 3;
+  grid-column: 2;
+  grid-row: 7; /* Place in the bottom row */
   height: 60vh;
+  display: flex;
+  align-items: center;
+  align-self: end; /* Align to bottom of grid cell */
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-#molecule-container {
+/* Keep your existing viewer-wrapper styles */
+.viewer-wrapper {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.molecule-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  position: relative;
+}
+
+.molecule-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
