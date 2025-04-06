@@ -1,11 +1,23 @@
 import React from "react";
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import './App.css';
 import { scrollToElement } from "./utils";
 
 const NavBar = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+  
+    const handleHomeClick = () => {
+      if (location.pathname === "/home") {
+        navigate("/"); // Go back to MainPage
+      } else {
+        navigate("/home"); // Go to HomePage
+      }
+    };
 return (
     <nav className="navbar">
     <ul className="nav-items">
-      <li className="nav-item">Home</li>
+        <li className="nav-item" onClick={handleHomeClick}>Home</li>
 
       <li className="nav-item dropdown">
         Software
