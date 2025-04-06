@@ -7,8 +7,12 @@ import Space2 from './Space2';
 import Space3 from './Space3';
 import Pics from './Pics';
 import FunFacts from './FunFacts';
+import NavBar from './NavBar';
+import { div } from 'three/tsl';
 function App() {
   return (
+    <div>
+    <NavBar/>
     <div className="grid-container">
     <Yapping/>
     <Space3/>
@@ -22,6 +26,7 @@ function App() {
     <div className="viewer-container">
       <MoleculeViewer />
     </div>
+  </div>
   </div>
   );
 }

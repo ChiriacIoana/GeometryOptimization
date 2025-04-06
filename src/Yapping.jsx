@@ -2,7 +2,7 @@ import React from 'react';
 
 const Yapping = () => {
     return (
-    <div class="yap-container">
+    <div class="yap-container" id="explicatii-section">
         <div class="page-title">See the Change: Peptide Bond Optimization</div>
         <div class="title">Ce este o legătură peptidică?</div>
         <div class="yap">O legătură peptidică se formează între doi aminoacizi atunci când gruparea carboxil (-COOH) a unui aminoacid reacționează cu gruparea amină (-NH₂) a altui aminoacid, eliberând o moleculă de apă (H₂O) — aceasta este o reacție de condensare.
