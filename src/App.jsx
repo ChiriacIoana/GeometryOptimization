@@ -1,4 +1,5 @@
 import './App.css';
+import './Home.css';
 import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import MoleculeViewer from "./MoleculeViewer";
 import Space from "./Space";
@@ -11,6 +12,7 @@ import FunFacts from './FunFacts';
 import NavBar from './NavBar';
 import Home from './Home';
 import React from 'react';
+import Footer from './Footer';
 
 function MainPage() {
   return (
@@ -27,13 +29,14 @@ function MainPage() {
       <div className="viewer-container">
         <MoleculeViewer />
       </div>
+      <Footer/>
     </div>
   );
 }
 
 function HomePage() {
   return (
-    <div >
+    <div className="grid-containerHome">
       <Home/>
     </div>
   );
@@ -50,6 +53,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    
   );
 }
 

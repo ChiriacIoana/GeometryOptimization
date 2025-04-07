@@ -9,7 +9,7 @@ html, body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: auto auto 1fr auto; /* Add an extra row for bottom content */
+  grid-template-rows: auto auto 1fr auto auto; /* Add an extra row for bottom content */
   gap: 10px;
   height: 100vh;
   min-height: 100%; /* Ensure full height */
@@ -248,7 +248,7 @@ html, body {
     font-size: 1.2em;
   }
 }
-/* NavBar Styles */
+
 .navbar {
   background-color: #1e1e1e;
   display: flex;
@@ -322,10 +322,22 @@ html, body {
   color: #64b5f6;
 }
 
-/* Add a subtle indicator for dropdown menus */
 .dropdown::after {
   content: '▼';
   font-size: 0.7em;
   margin-left: 5px;
   vertical-align: middle;
+}
+
+.copyright {
+  color: rgb(50, 3, 3);
+  font-size: 0.9em;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: center;
+  padding: 5px 0;
+  background-color: white;
+  width: 100%;
+  position: relative; 
+  margin-left: 0px;
+  bottom: 0;
 }

@@ -1,0 +1,74 @@
+.grid-containerHome {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+.gallery-container {
+    padding: 40px;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .gallery-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #6b0628;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .page-titleHome {
+    margin-top: 120px;
+    font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #64b5f6, #9575cd, #e57373, #ffb74d, #64b5f6); /* Adjusted gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: waveGradient 10s linear infinite;
+  background-size: 500%;
+  }
+
+  .copyrightHome {
+    color: rgb(168, 161, 161);
+    font-size: 0.9em;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgba(62, 59, 59, 0.649);
+    width: 100%;
+    position: relative; 
+    margin-left: 0px;
+    bottom: 0;
+  }
+  
