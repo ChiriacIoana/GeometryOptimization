@@ -33,6 +33,7 @@ background-size: 500%;
   margin-bottom: 20px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #6b0628;
+  text-shadow: 1.5px 1.5px 2.2px rgba(238, 238, 238, 0.982);
 }
 
 .gallery-grid {
@@ -86,6 +87,7 @@ background-size: 500%;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #6b0628;
   margin-bottom: 30px;
+  text-shadow: 1.5px 1.5px 2.2px rgba(238, 238, 238, 0.982);
 }
 
 .authors-grid {
