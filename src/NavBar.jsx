@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import './App.css';
 import { scrollToElement } from "./utils";
 
 const NavBar = () => {

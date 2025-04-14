@@ -1,74 +1,166 @@
+.page-titleHome {
+  margin-top: 750px;
+  font-size: 2.5em;
+font-weight: bold;
+margin-bottom: 20px;
+background: linear-gradient(90deg, #64b5f6, #9575cd, #e57373, #ffb74d, #64b5f6); /* Adjusted gradient */
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: waveGradient 10s linear infinite;
+background-size: 500%;
+}
+
 .grid-containerHome {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 30px;
-    padding: 40px 20px;
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
 .gallery-container {
-    padding: 40px;
-    background-color: #121212;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .gallery-title {
-    font-size: 2em;
-    margin-bottom: 20px;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #6b0628;
-  }
-  
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-  }
-  
-  .gallery-item {
-    overflow: hidden;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
-  }
-  
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item:hover img {
-    transform: scale(1.1);
-  }
+  padding: 40px;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+}
 
-  .page-titleHome {
-    margin-top: 120px;
-    font-size: 2.5em;
-  font-weight: bold;
+.gallery-title {
+  font-size: 2em;
   margin-bottom: 20px;
-  background: linear-gradient(90deg, #64b5f6, #9575cd, #e57373, #ffb74d, #64b5f6); /* Adjusted gradient */
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: waveGradient 10s linear infinite;
-  background-size: 500%;
-  }
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #6b0628;
+}
 
-  .copyrightHome {
-    color: rgb(168, 161, 161);
-    font-size: 0.9em;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    text-align: center;
-    padding: 5px 0;
-    background-color: rgba(62, 59, 59, 0.649);
-    width: 100%;
-    position: relative; 
-    margin-left: 0px;
-    bottom: 0;
-  }
-  
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.copyrightHome {
+  color: rgb(168, 161, 161);
+  font-size: 0.9em;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: center;
+  padding: 5px 0;
+  background-color: rgba(62, 59, 59, 0.649);
+  width: 100%;
+  position: relative; 
+  margin-left: 0px;
+  bottom: 0;
+}
+
+.authors-section {
+  padding: 40px 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+  margin-bottom: 100px;
+}
+
+.authors-title {
+  font-size: 2em;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #6b0628;
+  margin-bottom: 30px;
+}
+
+.authors-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.author-card {
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.author-card:hover {
+  transform: scale(1.05);
+}
+
+.author-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #6b0628;
+}
+
+.author-name {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.author-role {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.github-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.github-link-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+  height: 70px;
+  width: 400px;
+  border-radius: 7px;
+}
+
+.github-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.github-link {
+  font-size: 1.1em;
+  color: #e7dfdf;
+  text-decoration: none;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+  color: #86b1d4bf;
+}

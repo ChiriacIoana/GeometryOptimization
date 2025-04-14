@@ -1,6 +1,6 @@
 import './App.css';
 import './Home.css';
-import {HashRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import MoleculeViewer from "./MoleculeViewer";
 import Space from "./Space";
 import Media from "./Media";
@@ -16,6 +16,8 @@ import Footer from './Footer';
 
 function MainPage() {
   return (
+    <>
+    <NavBar />
     <div className="grid-container">
       <Yapping/>
       <Space3/>
@@ -31,14 +33,18 @@ function MainPage() {
       </div>
       <Footer/>
     </div>
+    </>
   );
 }
 
 function HomePage() {
   return (
+    <>
+    <NavBar />
     <div className="grid-containerHome">
       <Home/>
     </div>
+  </>
   );
 }
 
@@ -46,8 +52,9 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <NavBar/>
+       
         <Routes>
+          
           <Route path="/" element={<MainPage />} />
           <Route path="/home" element={<HomePage />} />
         </Routes>
