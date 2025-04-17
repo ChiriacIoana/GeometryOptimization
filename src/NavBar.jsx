@@ -13,12 +13,18 @@ const NavBar = () => {
         navigate("/home"); // Go to HomePage
       }
     };
+    const handleSoftwareClick = () => {
+        navigate("/"); // Go to MainPage
+    };
+    const handleHardwareClick = () => {
+        navigate("/hardware"); // Go to HardwarePage
+    }
 return (
     <nav className="navbar">
     <ul className="nav-items">
         <li className="nav-item" onClick={handleHomeClick}>Home</li>
 
-      <li className="nav-item dropdown">
+      <li className="nav-item dropdown" onClick={handleSoftwareClick}>
         Software
         <ul className="dropdown-menu">
           <li className="dropdown-item" onClick={() => scrollToElement('explicatii-section')}>Explicații</li>
@@ -27,7 +33,7 @@ return (
         </ul>
       </li>
 
-      <li className="nav-item dropdown">
+      <li className="nav-item dropdown" onClick={handleHardwareClick}>
         Hardware
         <ul className="dropdown-menu">
           <li className="dropdown-item">Sensor Kit</li>

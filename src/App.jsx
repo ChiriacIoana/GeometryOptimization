@@ -13,6 +13,8 @@ import NavBar from './NavBar';
 import Home from './Home';
 import React from 'react';
 import Footer from './Footer';
+import Hardware from './Hardware';
+import ArmViewer from './ArmViewer';
 
 function MainPage() {
   return (
@@ -48,6 +50,16 @@ function HomePage() {
   );
 }
 
+function HardwarePage() {
+  return(
+    <>
+    <NavBar/>
+    <Hardware/>
+    <ArmViewer/>
+    </>
+  )
+}
+
 function App() {
   return (
     <Router>
@@ -57,6 +69,7 @@ function App() {
           
           <Route path="/" element={<MainPage />} />
           <Route path="/home" element={<HomePage />} />
+          <Route path="/hardware" element={<HardwarePage />} />
         </Routes>
       </div>
     </Router>
