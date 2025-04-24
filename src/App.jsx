@@ -1,5 +1,6 @@
 import './App.css';
 import './Home.css';
+import './Hardware.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import MoleculeViewer from "./MoleculeViewer";
 import Space from "./Space";
@@ -51,13 +52,17 @@ function HomePage() {
 }
 
 function HardwarePage() {
-  return(
+  return (
     <>
-    <NavBar/>
-    <Hardware/>
-    <ArmViewer/>
+      <NavBar />
+      <div className="hardware-container">
+        <Hardware />
+        <div className="armViewerContainer">
+          <ArmViewer modelPath="/TestModel2Modif.fbx" />
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 function App() {
@@ -66,7 +71,6 @@ function App() {
       <div className="app-container">
        
         <Routes>
-          
           <Route path="/" element={<MainPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/hardware" element={<HardwarePage />} />

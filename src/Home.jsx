@@ -4,7 +4,7 @@ import './App.css';
 
 const images = [
     "./testPic.jpg",
-    "https://source.unsplash.com/random/300x300?sig=2",
+    "./RoboticArmPic.jpg",
     "https://source.unsplash.com/random/300x300?sig=3",
     "https://source.unsplash.com/random/300x300?sig=4",
     "https://source.unsplash.com/random/300x300?sig=5",

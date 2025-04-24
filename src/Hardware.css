@@ -1,0 +1,9 @@
+.hardware-container {
+    padding: 20px;
+}
+
+.armViewerContainer {
+    width: 800px;
+    height: auto;
+    margin: 20px 0;
+}
