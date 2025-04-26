@@ -36,9 +36,9 @@ return (
       <li className="nav-item dropdown" onClick={handleHardwareClick}>
         Hardware
         <ul className="dropdown-menu">
-        <li className="dropdown-item" onClick={() => scrollToElement('sensor-kit-section')}>Sensor Kit</li>
-        <li className="dropdown-item" onClick={() => scrollToElement('microcontroller-section')}>Microcontroller</li>
-        <li className="dropdown-item" onClick={() => scrollToElement('robotics-section')}>Robotics</li>
+        <li className="dropdown-item" onClick={() => scrollToElement('components-section')}>Componente</li>
+        <li className="dropdown-item" onClick={() => scrollToElement('animation-section')}>Animație 3D</li>
+        <li className="dropdown-item" onClick={() => scrollToElement('robotics-section')}>idkk</li>
 
         </ul>
       </li>

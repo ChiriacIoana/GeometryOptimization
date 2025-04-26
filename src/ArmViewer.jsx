@@ -221,7 +221,7 @@ const ArmViewer = ({ modelPath }) => {
     };
   }, [modelPath]);
   
-  return <div ref={mountRef} style={{ width: '100%', height: '500px' }} />;
+  return <div ref={mountRef} style={{ width: '100%', height: '500px' }}/>;
 };
 
 export default ArmViewer;
