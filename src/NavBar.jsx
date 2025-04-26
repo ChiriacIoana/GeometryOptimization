@@ -36,9 +36,10 @@ return (
       <li className="nav-item dropdown" onClick={handleHardwareClick}>
         Hardware
         <ul className="dropdown-menu">
-          <li className="dropdown-item">Sensor Kit</li>
-          <li className="dropdown-item">Microcontroller</li>
-          <li className="dropdown-item">Robotics</li>
+        <li className="dropdown-item" onClick={() => scrollToElement('sensor-kit-section')}>Sensor Kit</li>
+        <li className="dropdown-item" onClick={() => scrollToElement('microcontroller-section')}>Microcontroller</li>
+        <li className="dropdown-item" onClick={() => scrollToElement('robotics-section')}>Robotics</li>
+
         </ul>
       </li>
     </ul>

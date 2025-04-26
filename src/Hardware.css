@@ -1,40 +1,48 @@
-.root, body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    background-color: black;
-}
-
-.hardware-page {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
 .hardware-container {
-    padding: 20px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    max-width: 100%; 
+    height: calc(100vh - 60px); 
+    overflow-y: auto; 
+    padding: 40px 20px;
+    background-color: black;
     box-sizing: border-box;
     margin: 0;
+    z-index: 10;
 }
 
 .armViewerContainer {
-    width: 800px;
-    height: auto;
-    margin: 20px 0;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.page-titleHard {
+    margin-top: 60px; /* Changed from 300px */
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #64b5f6, #9575cd, #e57373, #ffb74d, #64b5f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: waveGradient 10s linear infinite;
+    background-size: 500%;
 }
 
-.page-titleHard {
-    margin-top: 300px;
-    font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, #64b5f6, #9575cd, #e57373, #ffb74d, #64b5f6); /* Adjusted gradient */
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: waveGradient 10s linear infinite;
-  background-size: 500%;
+.page-titleSmol {
+    font-size: 1.2em;
+    margin-left: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #9fc3e1, #b59fdd, #e6cece, #dbc4a0, #a0b8cb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: waveGradient 10s linear infinite;
+    background-size: 500%;
 }

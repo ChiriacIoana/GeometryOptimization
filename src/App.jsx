@@ -19,8 +19,6 @@ import ArmViewer from './ArmViewer';
 
 function MainPage() {
   return (
-    <>
-    <NavBar />
     <div className="grid-container">
       <Yapping/>
       <Space3/>
@@ -36,14 +34,12 @@ function MainPage() {
       </div>
       <Footer/>
     </div>
-    </>
   );
 }
 
 function HomePage() {
   return (
     <>
-    <NavBar />
     <div className="grid-containerHome">
       <Home/>
     </div>
@@ -53,15 +49,11 @@ function HomePage() {
 
 function HardwarePage() {
   return (
-    <>
-    <NavBar />
+    <div>
     <div className="hardware-container">
       <Hardware />
-      <div className="armViewerContainer">
-        <ArmViewer modelPath="/TestModel2Modif.fbx" />
-      </div>
     </div>
-  </>
+  </div>
   );
 }
 
@@ -69,7 +61,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-       
+       <NavBar/>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/home" element={<HomePage />} />
