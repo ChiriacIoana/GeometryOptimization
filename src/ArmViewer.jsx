@@ -27,6 +27,8 @@ const ArmViewer = ({ modelPath }) => {
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap; // Better shadow quality
     currentMount.appendChild(renderer.domElement);
+    renderer.domElement.style.borderRadius = "17px";
+    renderer.domElement.style.overflow = "hidden";
     
     // Controls
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -81,13 +83,6 @@ const ArmViewer = ({ modelPath }) => {
         spotLight.target.position.set(0, 0, 0);
         scene.add(spotLight.target);
         scene.add(spotLight);
-        
-        // Add visible helpers for debugging only
-        // Uncomment if you need to visualize light positions
-        /*
-        const helper = new THREE.SpotLightHelper(spotLight);
-        scene.add(helper);
-        */
       }
       
       // Add two blue point lights for general glow
@@ -111,7 +106,6 @@ const ArmViewer = ({ modelPath }) => {
       testSphere.position.set(0, 3, 0);
       testSphere.castShadow = true;
       testSphere.receiveShadow = true;
-      //scene.add(testSphere);
     }
     
     // Load FBX model
@@ -151,6 +145,9 @@ const ArmViewer = ({ modelPath }) => {
         
         object.rotation.x = -Math.PI / 2; // Rotate 90 degrees around X axis
         object.position.set(-center.x * fixedScale, -center.y * fixedScale, -center.z * fixedScale);
+        <mesh rotation={[-Math.PI / 2, 0, 0]} scale={[5, 5, 5]}>
+        </mesh>
+
         
         // Add to scene
         scene.add(object);

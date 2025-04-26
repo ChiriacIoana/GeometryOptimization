@@ -14,14 +14,40 @@
     z-index: 10;
 }
 
-.armViewerContainer {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
+.armViewerWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 17px;
+    overflow: hidden;
+  }
+  
+  .armViewerBackground {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(135deg, #470759a7 0%, #0061c251 50%, #00535b8f 100%);
+    box-shadow: #0cc7d495;
+    filter: blur(80px);
+    z-index: 0;
+  }
+  
+  .armViewerContainer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+  }
+  
 .page-titleHard {
-    margin-top: 60px; /* Changed from 300px */
+    margin-top: 0px;
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 20px;
@@ -46,3 +72,72 @@
     animation: waveGradient 10s linear infinite;
     background-size: 500%;
 }
+
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .collage-item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .collage-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .collage-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .collage-subtitle {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #64b5f6;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .collage-description {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #d3d3d3;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Make second row images wider */
+  .collage-item:nth-child(n+5) {
+    grid-column: span 4; /* Each of the last 3 images spans about 1.33 columns */
+  }
+  
+  @media (min-width: 768px) {
+    .collage-container {
+      grid-template-columns: repeat(12, 1fr); /* 12 units */
+    }
+  
+    .collage-item:nth-child(-n+4) {
+      grid-column: span 3; /* First 4 images span 3 units each = 3*4 = 12 */
+    }
+  
+    .collage-item:nth-child(n+5) {
+      grid-column: span 4; /* Last 3 images span 4 units each = 4*3 = 12 */
+    }
+  }
+  
+  .collage-item:nth-child(n+0):hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(100, 181, 246, 0.4);
+  }
+  
+  /* Smooth the transition */
+  .collage-item {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
