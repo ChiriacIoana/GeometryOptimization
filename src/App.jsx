@@ -54,14 +54,14 @@ function HomePage() {
 function HardwarePage() {
   return (
     <>
-      <NavBar />
-      <div className="hardware-container">
-        <Hardware />
-        <div className="armViewerContainer">
-          <ArmViewer modelPath="/TestModel2Modif.fbx" />
-        </div>
+    <NavBar />
+    <div className="hardware-container">
+      <Hardware />
+      <div className="armViewerContainer">
+        <ArmViewer modelPath="/TestModel2Modif.fbx" />
       </div>
-    </>
+    </div>
+  </>
   );
 }
 

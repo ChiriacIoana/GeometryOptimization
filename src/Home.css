@@ -1,5 +1,5 @@
 .page-titleHome {
-  margin-top: 750px;
+  margin-top: 930px;
   font-size: 2.5em;
 font-weight: bold;
 margin-bottom: 20px;
@@ -71,6 +71,16 @@ background-size: 500%;
   position: relative; 
   margin-left: 0px;
   bottom: 0;
+}
+.footer-linkHome {
+  color: #000000;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+
+}
+
+.footer-link:hoverHome {
+  color: #23323eb0;
 }
 
 .authors-section {

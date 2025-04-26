@@ -1,9 +1,40 @@
+.root, body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.hardware-page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
 .hardware-container {
     padding: 20px;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .armViewerContainer {
     width: 800px;
     height: auto;
     margin: 20px 0;
+}
+
+.page-titleHard {
+    margin-top: 300px;
+    font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #64b5f6, #9575cd, #e57373, #ffb74d, #64b5f6); /* Adjusted gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: waveGradient 10s linear infinite;
+  background-size: 500%;
 }

@@ -27,6 +27,12 @@ const Home = () => {
         </div>
         <div className="title">Inspirație</div>
         <div className="yap">Acest proiect a fost inspirat de pasiunea pentru chimie și robotică, dar și de dorința de a face mai ușor de înțeles interacțiunile moleculare. Văzând cât de dificil poate fi să vizualizezi ce se întâmplă la nivel molecular, ne-am dorit să creez ceva care să reducă distanța dintre teorie și percepție.
+        Am pornit de la întrebarea: cum ar fi dacă am putea "atinge" lumea invizibilă a atomilor? Fascinați de modul în care legile fizicii cuantice guvernează procesele la scară microscopică, am vrut să găsim o metodă prin care aceste fenomene abstracte să devină mai accesibile și mai intuitive.
+        Credem că învățarea este mult mai eficientă atunci când implică nu doar vederea sau auzul, ci și interacțiunea fizică. De aceea, am ales să îmbinăm simulările digitale realizate cu ORCA și Avogadro cu un sistem robotic capabil să redea fizic formarea moleculelor.
+        </div>
+        <div className="title">Cum?</div>
+        <div className="yap">Pentru partea software, am folosit Avogadro pentru a construi și optimiza modele moleculare, iar ORCA pentru a realiza calcule cuantice detaliate pe peptide. Partea hardware a fost dezvoltată proiectând brațul robotic în Fusion 360 și controlându-l printr-o placă Arduino UNO, astfel încât să reproducă fizic formarea legăturilor chimice.
+        Astfel, întregul sistem combină simularea teoretică cu interacțiunea fizică într-o experiență integrată.
         </div>
     </div>
     <div className="gallery-container">
@@ -64,8 +70,15 @@ const Home = () => {
           </div>
     </div>
     </div>
-    <div className="copyrightHome">
-    Made with &#10084; by @chiriacioana2008@gmail.com
+    <div className="copyright">
+      Made with &#10084; by <a 
+        className="footer-link"
+        href="https://www.instagram.com/ioana.chr9/?next=%2F" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        ioana
+      </a>
     </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hardware = () => {
 return (
-    <h1>vghvbjkhjoih</h1>
+    <div className="page-titleHard">See the Change: Peptide Bond Optimization</div>
 )
 };
 
