@@ -7,10 +7,8 @@ const NavBar = () => {
     const navigate = useNavigate();
   
     const handleHomeClick = () => {
-      if (location.pathname === "/home") {
-        navigate("/"); // Go back to MainPage
-      } else {
-        navigate("/home"); // Go to HomePage
+      if (location.pathname !== "/home") {
+        navigate("/home"); // Go to MainPage
       }
     };
     const handleSoftwareClick = () => {

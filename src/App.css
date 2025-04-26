@@ -61,12 +61,13 @@ html, body {
   font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 20px;
-  background: linear-gradient(90deg, #64b5f6, #9575cd, #e57373, #ffb74d, #64b5f6); /* Adjusted gradient */
+  background: linear-gradient(90deg, #64b5f6, #9575cd, #df73e5, #163457, #4a245a);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: waveGradient 10s linear infinite;
   background-size: 500%;
+
 }
 
 @keyframes waveGradient {
@@ -86,6 +87,14 @@ html, body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.yap:hover {
+  background-color: #2a2a2a;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
 
 .title {
   font-size: 1.2em;
