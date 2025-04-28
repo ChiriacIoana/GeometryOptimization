@@ -36,7 +36,7 @@ return (
         <ul className="dropdown-menu">
         <li className="dropdown-item" onClick={() => scrollToElement('components-section')}>Componente</li>
         <li className="dropdown-item" onClick={() => scrollToElement('animation-section')}>Animație 3D</li>
-        <li className="dropdown-item" onClick={() => scrollToElement('robotics-section')}>idkk</li>
+        <li className="dropdown-item" onClick={() => scrollToElement('materials-section')}>Materiale</li>
 
         </ul>
       </li>

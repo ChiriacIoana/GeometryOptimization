@@ -26,6 +26,46 @@ return (
       </div>
       </div>
 
+    <div id="materials-section"><span className="title">Materiale</span><span className="page-titleSmol">Braț Robotic</span></div>
+    <div className="yap">Materialele utilizate pentru construcția brațului robotic joacă un rol esențial în asigurarea durabilității, preciziei și funcționalității întregului sistem. Fiecare componentă a fost aleasă cu grijă pentru a răspunde cerințelor de rezistență mecanică, fiabilitate electronică și adaptabilitate la condiții de utilizare variate. Prin combinarea materialelor potrivite — de la plăci de dezvoltare performante și motoare de înaltă precizie, până la materiale plastice ecologice pentru structura fizică — am reușit să construim un braț robotic eficient, robust și ușor de controlat. Se acordă o atenție specială integrării armonioase între componentele mecanice și cele electronice, astfel încât să asigurăm o funcționare optimă și o experiență practică de utilizare.</div>
+    <div class="materials-grid">
+  <div class="material-card">
+    <h3>Arduino Uno</h3>
+    <p>Placă de microcontroler bazată pe ATmega328P. Controlează toți motoarele și intrările brațului robotic.</p>
+    <p class="material-category">Electronică</p>
+  </div>
+
+  <div class="material-card">
+    <h3>Servomotoare</h3>
+    <p>Motoare cu cuplu ridicat care permit mișcări precise ale fiecărui braț sau articulație.</p>
+    <p class="material-category">Mecanică/Electronică</p>
+  </div>
+
+  <div class="material-card">
+    <h3>Filament PLA</h3>
+    <p>Material ecologic pentru imprimare 3D, utilizat la fabricarea componentelor structurale ale brațului robotic.</p>
+    <p class="material-category">Imprimare 3D</p>
+  </div>
+
+  <div class="material-card">
+    <h3>Potentiometre</h3>
+    <p>Senzori analogici folosiți pentru a detecta unghiurile de rotație și a trimite feedback către controler.</p>
+    <p class="material-category">Electronică</p>
+  </div>
+
+  <div class="material-card">
+    <h3>Fire și conectori</h3>
+    <p>Necesare pentru a conecta alimentarea, semnalele de control și datele între componente.</p>
+    <p class="material-category">Electronică</p>
+  </div>
+
+  <div class="material-card">
+    <h3>Buton Push</h3>
+    <p>Permite controlul manual sau declanșarea anumitor funcții ale brațului robotic.</p>
+    <p class="material-category">Electronică</p>
+  </div>
+</div>
+
      
      <div className="copyright">
       Made with &#10084; by <a 
