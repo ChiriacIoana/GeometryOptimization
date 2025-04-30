@@ -27,7 +27,7 @@ return (
       </div>
 
     <div id="materials-section"><span className="title">Materiale</span><span className="page-titleSmol">Braț Robotic</span></div>
-    <div className="yap">Materialele utilizate pentru construcția brațului robotic joacă un rol esențial în asigurarea durabilității, preciziei și funcționalității întregului sistem. Fiecare componentă a fost aleasă cu grijă pentru a răspunde cerințelor de rezistență mecanică, fiabilitate electronică și adaptabilitate la condiții de utilizare variate. Prin combinarea materialelor potrivite — de la plăci de dezvoltare performante și motoare de înaltă precizie, până la materiale plastice ecologice pentru structura fizică — am reușit să construim un braț robotic eficient, robust și ușor de controlat. Se acordă o atenție specială integrării armonioase între componentele mecanice și cele electronice, astfel încât să asigurăm o funcționare optimă și o experiență practică de utilizare.</div>
+    <div className="yap">Materialele utilizate pentru construcția brațului robotic joacă un rol esențial în asigurarea durabilității, preciziei și funcționalității întregului sistem. Fiecare componentă a fost aleasă pentru a răspunde cerințelor de rezistență mecanică, fiabilitate electronică și adaptabilitate la condițiile de utilizar. Prin combinarea materialelor potrivite — plăci de dezvoltare și motoare potrivite, precum și materiale plastice ecologice pentru structura fizică — am reușit să construim un braț robotic eficient, robust și ușor de controlat.</div>
     <div class="materials-grid">
   <div class="material-card">
     <h3>Arduino Uno</h3>
