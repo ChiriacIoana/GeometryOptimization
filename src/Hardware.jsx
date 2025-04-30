@@ -31,19 +31,19 @@ return (
     <div class="materials-grid">
   <div class="material-card">
     <h3>Arduino Uno</h3>
-    <p>Placă de microcontroler bazată pe ATmega328P. Controlează toți motoarele și intrările brațului robotic.</p>
+    <p>Arduino UNO  este o platforma de procesare open-source, bazata pe software si hardware flexibil si simplu de folosit.</p>
     <p class="material-category">Electronică</p>
   </div>
 
   <div class="material-card">
     <h3>Servomotoare</h3>
-    <p>Motoare cu cuplu ridicat care permit mișcări precise ale fiecărui braț sau articulație.</p>
+    <p>Un servo este un motor specializat. Are o placă de control încorporată și un potențiometru de feedback pentru o poziționare precisă. Este ușor să controlăm un servomotor folosind un microcontroler, cum ar fi un Arduino.</p>
     <p class="material-category">Mecanică/Electronică</p>
   </div>
 
   <div class="material-card">
     <h3>Filament PLA</h3>
-    <p>Material ecologic pentru imprimare 3D, utilizat la fabricarea componentelor structurale ale brațului robotic.</p>
+    <p>PLA este unul dintre cele mai utilizate filamente datorită ușurinței sale de utilizare și accesibilității. Este derivat din resurse regenerabile, ceea ce îl face prietenos cu mediul.</p>
     <p class="material-category">Imprimare 3D</p>
   </div>
 
