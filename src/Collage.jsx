@@ -9,12 +9,12 @@ const Collage = () => {
     },
     {
       src: "./img2.jpg",
-      subtitle: "Bottom Holder / Joint",
+      subtitle: "Bottom Holder",
       description: "Suportul inferior și articulația principală, permit rotirea și susținerea axelor superioare."
     },
     {
       src: "./img3.jpg",
-      subtitle: "Cover",
+      subtitle: "B.H. Cover",
       description: "Carcasa de protecție care îmbracă componentele interne, asigurând durabilitate și siguranță."
     },
     {
@@ -29,12 +29,12 @@ const Collage = () => {
     },
     {
       src: "./img6.jpg",
-      subtitle: "Cleste",
+      subtitle: "Gripper",
       description: "Dispozitivul de prindere (gripper) al brațului, utilizat pentru a manipula obiecte cu precizie."
     },
     {
       src: "./img7.jpg",
-      subtitle: "Capac",
+      subtitle: "Base plate",
       description: "Piesa finală care protejează și închide mecanismul de prindere pentru un aspect curat și funcționalitate sigură."
     }
   ];
