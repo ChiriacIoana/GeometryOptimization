@@ -14,9 +14,9 @@ const images = [
     "./homePic9.jpg",
     "./homePic10.jpg",
     "./homePic11.jpg",
-    "https://source.unsplash.com/random/300x300?sig=8",
-    "https://source.unsplash.com/random/300x300?sig=9",
-    "https://source.unsplash.com/random/300x300?sig=10",
+    "./homePic12.jpg",
+    "./homePic13.jpg",
+    "./homePic14.jpg",
   ];
 
 const Home = () => {
